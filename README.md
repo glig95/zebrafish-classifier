@@ -13,6 +13,7 @@ We trained the classifiers on zebrafish embryos which are either WT (nonperturbe
 ![20190427_fss_fss18](https://user-images.githubusercontent.com/20626185/174071547-2928819e-348a-4fb8-83ed-568f10611db6.png)
 
 4. WT class
+
 ![2_FW_1](https://user-images.githubusercontent.com/20626185/174071588-1de8c4d2-dafc-4d17-a624-176015c5c9c4.png)
 
 The three main Jupyter notebooks in the repository are used for training three different classifiers:

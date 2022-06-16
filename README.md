@@ -1,7 +1,7 @@
 # zebrafish-classifier
 The repository contains the code used to train, evaluate and visualize the results of zebrafish embryo classifiers from "Identifying zebrafish segmentation phenotype features using multiple instance learning".
 
-We trained the classifiers on zebrafish embryos which are either WT (nonperturbed) or have a disruption in the segmentation clock (her1;her7, tbx6_fss and DAPT classes). The specific type of the disruption is hard to be discerned based on the in situ hibridization images of the zebrafish embryo. For example:
+We trained the classifiers on zebrafish embryos which are either WT (nonperturbed) or have a disruption in the segmentation clock (her1;her7, tbx6_fss and DAPT classes). The specific type of the disruption is hard to discern by a non trained eye based on the in situ hibridization images of the zebrafish embryo. For example:
 
 1. DAPT class
 
@@ -19,7 +19,7 @@ We trained the classifiers on zebrafish embryos which are either WT (nonperturbe
 
 ![2_FW_1](https://user-images.githubusercontent.com/20626185/174072962-44aa7b8d-d21a-464a-b322-c572a23c42ff.png)
 
-The three main Jupyter notebooks in the repository are used for training three different classifiers:
+We have thus trained three different classifiers that map the phenotype of the embryo into a certain class. The three main Jupyter notebooks in the repository are used for training three different classifiers:
 1. the baseline, shallow convolutional classifier
 2. the transfer-learning-, and MobileNetV2-based, classifier
 3. the attention-based multiple-instance-learning classifier.

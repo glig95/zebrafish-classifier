@@ -4,12 +4,15 @@ The repository contains the code used to train, evaluate and visualize the resul
 We trained the classifiers on zebrafish embryos which are either WT (nonperturbed) or have a disruption in the segmentation clock (her1;her7, tbx6_fss and DAPT classes). The specific type of the disruption is hard to be discerned based on the in situ hibridization images of the zebrafish embryo. For example:
 
 1. DAPT class
+
 ![2_DAPT50ISC_2](https://user-images.githubusercontent.com/20626185/174071147-d8f0bdfd-039c-496e-88b0-7304de7fae3a.png)
 
 2. her1_her7 class
+
 ![20190412_DMSO_7hpf_C1_gui3](https://user-images.githubusercontent.com/20626185/174071369-a9967507-1fdf-49eb-a5aa-2c3f16a65c47.png)
 
 3. tbx6_fss class
+
 ![20190427_fss_fss18](https://user-images.githubusercontent.com/20626185/174071547-2928819e-348a-4fb8-83ed-568f10611db6.png)
 
 4. WT class

@@ -30,7 +30,7 @@ Similarly, in the case of attention-based multiple instance learning, we calcula
 
 The sets used for training and evaluation of the classifiers were kept the same for all classifiers. Since the number of images in the training set was different from class to class, we use class-weights normalization during training. Validation sets are balanced and consist of 20 images from each class.
 
-Lastly, the "Code_for_plotting_figures" folder contains the code for plotting the three main figures of the manuscript.
+Lastly, the "code_for_plotting_figures" folder contains the code for plotting the three main figures of the manuscript.
 
 The code is written in Python (version 3.6.5) using Jupyter notebooks as the primary working environment. Neural networks were implemented in the Tensorflow library (version 2.3.0).
 

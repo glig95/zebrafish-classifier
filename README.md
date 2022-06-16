@@ -5,7 +5,7 @@ We trained the classifiers on zebrafish embryos which are either WT (nonperturbe
 
 1. DAPT class
 
-![2_DAPT50ISC_2](https://user-images.githubusercontent.com/20626185/174071147-d8f0bdfd-039c-496e-88b0-7304de7fae3a.png)
+![2_DAPT50ISC_2](https://user-images.githubusercontent.com/20626185/174072959-7f0fe306-e1f8-4a50-9ec6-6b7ab8b0953d.png)
 
 2. her1_her7 class
 
@@ -13,11 +13,11 @@ We trained the classifiers on zebrafish embryos which are either WT (nonperturbe
 
 3. tbx6_fss class
 
-![20190427_fss_fss18](https://user-images.githubusercontent.com/20626185/174071547-2928819e-348a-4fb8-83ed-568f10611db6.png)
+![20190427_fss_fss18](https://user-images.githubusercontent.com/20626185/174072954-90e55190-1ba6-468a-9eee-1e3911cd12c9.png)
 
 4. WT class
 
-![2_FW_1](https://user-images.githubusercontent.com/20626185/174071588-1de8c4d2-dafc-4d17-a624-176015c5c9c4.png)
+![2_FW_1](https://user-images.githubusercontent.com/20626185/174072962-44aa7b8d-d21a-464a-b322-c572a23c42ff.png)
 
 The three main Jupyter notebooks in the repository are used for training three different classifiers:
 1. the baseline, shallow convolutional classifier

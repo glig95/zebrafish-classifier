@@ -3,6 +3,7 @@ The repository contains the code used to train, evaluate and visualize the resul
 
 We trained the classifiers on zebrafish embryos which are either WT (nonperturbed) or have a disruption in the segmentation clock (her1;her7, tbx6_fss and DAPT classes). The specific type of the disruption is hard to be discerned based on the in situ hibridization images of the zebrafish embryo. For example:
 
+![DAPT](https://github.com/glig95/zebrafish-classifier/examples_of_images/DAPT/2_DAPT50ISC_2.png?raw=true)
 
 The three main Jupyter notebooks in the repository are used for training three different classifiers:
 1. the baseline, shallow convolutional classifier

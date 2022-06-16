@@ -1,7 +1,7 @@
 # zebrafish-classifier
 The repository contains the code used to train, evaluate and visualize the results of zebrafish embryo classifiers from "Identifying zebrafish segmentation phenotype features using multiple instance learning".
 
-We trained the classifiers on zebrafish embryos which are either WT (nonperturbed) or have a disruption in the segmentation clock (her1;her7, tbx6_fss and DAPT classes). The specific type of the disruption is hard to discern by a non trained eye based on the in situ hibridization images of the zebrafish embryo. For example:
+We trained the classifiers on zebrafish embryos which are either WT (nonperturbed) or have a disruption in the segmentation clock (her1;her7, tbx6_fss and DAPT classes). The specific type of the disruption is hard to discern by a non-trained eye based on the in situ hibridization images of the zebrafish embryo. For example:
 
 1. DAPT class
 

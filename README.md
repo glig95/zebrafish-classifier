@@ -28,8 +28,14 @@ Each of the notebooks contains the code to train and evaluate the classifier (co
 The evaluation of the second classifier is followed by a code to generate class-activation maps and quantify the contribution of fish parts to it.
 Similarly, in the case of attention-based multiple instance learning, we calculate normalized attention given to each of the fish parts.
 
-The sets used for training and evaluation of the classifiers, which were the same for all classifiers, can be downloaded from Zenodo: https://zenodo.org/record/6651752. Since the number of images in the training set was different from class to class, we use weights normalization during training. Validation sets are balanced and consist of 20 images from each class.
+The sets used for training and evaluation of the classifiers, were kept the same for all classifiers. Since the number of images in the training set was different from class to class, we use weights normalization during training. Validation sets are balanced and consist of 20 images from each class.
 
 Lastly, the "Code_for_plotting_figures" folder contains the code for plotting the three main figures of the manuscript.
 
 The code is written in Python (version 3.6.5) using Jupyter notebooks as the primary working environment. Neural networks were implemented in the Tensorflow library (version 2.3.0).
+
+To get started: 
+1. Download the dataset for training and evaluation from Zenodo (https://zenodo.org/record/6651752)
+2. Extract the files from 'data' folder and place 'training' and 'validation' folders in the same folder as the Jupyter notebooks.
+4. Install the packages required for running the notebooks that can be found in 'requirements.txt' (pip install -r requirements.txt)
+5. Run the notebook by executing the cells from top to bottom

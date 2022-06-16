@@ -28,7 +28,7 @@ Each of the notebooks contains the code to train and evaluate the classifier (co
 The evaluation of the second classifier is followed by a code to generate class-activation maps and quantify the contribution of fish parts to it.
 Similarly, in the case of attention-based multiple instance learning, we calculate normalized attention given to each of the fish parts.
 
-The sets used for training and evaluation of the classifiers, were kept the same for all classifiers. Since the number of images in the training set was different from class to class, we use weights normalization during training. Validation sets are balanced and consist of 20 images from each class.
+The sets used for training and evaluation of the classifiers were kept the same for all classifiers. Since the number of images in the training set was different from class to class, we use class-weights normalization during training. Validation sets are balanced and consist of 20 images from each class.
 
 Lastly, the "Code_for_plotting_figures" folder contains the code for plotting the three main figures of the manuscript.
 

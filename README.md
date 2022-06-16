@@ -9,7 +9,7 @@ We trained the classifiers on zebrafish embryos which are either WT (nonperturbe
 
 2. her1_her7 class
 
-![20190412_DMSO_7hpf_C1_gui3](https://user-images.githubusercontent.com/20626185/174071369-a9967507-1fdf-49eb-a5aa-2c3f16a65c47.png)
+![20190412_DMSO_7hpf_C1_gui3](https://user-images.githubusercontent.com/20626185/174072964-1a3ae32b-827b-46b0-8b2e-ad0a8117f9b6.png)
 
 3. tbx6_fss class
 

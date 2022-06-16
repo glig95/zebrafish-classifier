@@ -36,6 +36,6 @@ The code is written in Python (version 3.6.5) using Jupyter notebooks as the pri
 
 To get started: 
 1. Download the dataset for training and evaluation from Zenodo (https://zenodo.org/record/6651752),
-2. Extract the files from 'data' folder and place 'training' and 'validation' folders in the same folder as the Jupyter notebooks,
+2. Extract the files from 'data' folder and place 'training', 'validation' and 'fish_part_labels' folders in the same folder as the Jupyter notebooks,
 4. Install the packages required for running the notebooks that can be found in 'requirements.txt' (pip install -r requirements.txt),
 5. Run the notebook by executing the cells from top to bottom.

@@ -5,7 +5,7 @@ We trained the classifiers on zebrafish embryos which are either WT (nonperturbe
 
 1. DAPT class
 
-[[https://user-images.githubusercontent.com/20626185/174071147-d8f0bdfd-039c-496e-88b0-7304de7fae3a.png|width=900|height=450]]
+[[https://user-images.githubusercontent.com/20626185/174071147-d8f0bdfd-039c-496e-88b0-7304de7fae3a.png|width=900]]
 
 2. her1_her7 class
 

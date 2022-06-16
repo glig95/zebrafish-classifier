@@ -35,7 +35,7 @@ Lastly, the "Code_for_plotting_figures" folder contains the code for plotting th
 The code is written in Python (version 3.6.5) using Jupyter notebooks as the primary working environment. Neural networks were implemented in the Tensorflow library (version 2.3.0).
 
 To get started: 
-1. Download the dataset for training and evaluation from Zenodo (https://zenodo.org/record/6651752)
-2. Extract the files from 'data' folder and place 'training' and 'validation' folders in the same folder as the Jupyter notebooks.
-4. Install the packages required for running the notebooks that can be found in 'requirements.txt' (pip install -r requirements.txt)
-5. Run the notebook by executing the cells from top to bottom
+1. Download the dataset for training and evaluation from Zenodo (https://zenodo.org/record/6651752),
+2. Extract the files from 'data' folder and place 'training' and 'validation' folders in the same folder as the Jupyter notebooks,
+4. Install the packages required for running the notebooks that can be found in 'requirements.txt' (pip install -r requirements.txt),
+5. Run the notebook by executing the cells from top to bottom.

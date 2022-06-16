@@ -19,7 +19,7 @@ We trained the classifiers on zebrafish embryos which are either WT (nonperturbe
 
 ![2_FW_1](https://user-images.githubusercontent.com/20626185/174072962-44aa7b8d-d21a-464a-b322-c572a23c42ff.png)
 
-We have thus trained three different classifiers that map the phenotype of the embryo into a certain class. The three main Jupyter notebooks in the repository are used for training three different classifiers:
+We have thus trained three different classifiers that map the phenotype of the embryo into one of the four classes. The three main Jupyter notebooks in the repository are used for training three different classifiers:
 1. the baseline, shallow convolutional classifier
 2. the transfer-learning-, and MobileNetV2-based, classifier
 3. the attention-based multiple-instance-learning classifier.

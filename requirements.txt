@@ -8,7 +8,11 @@ imageio==2.6.1
 keras==2.4.3
 sklearn==0.0
 scipy==1.5.4
-tensorflow-datasets==4.3.0
-opencv==4.2.0
 Pillow==6.2.1
 seaborn==0.11.2
+tensorflow-datasets==4.3.0
+opencv-python==4.6.0.66
+opencv-contrib-python==4.6.0.66
+opencv-python-headless==4.6.0.66
+albumentations==1.0.3
+ImageDataAugmentor==0.0.0

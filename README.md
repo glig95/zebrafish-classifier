@@ -25,10 +25,9 @@ We have thus trained three different classifiers that map the phenotype of the e
 3. the attention-based multiple-instance-learning classifier.
 
 Each of the notebooks contains the code to train and evaluate the classifier (construct confusion matrix and calculate the accuracy of classification).
-The evaluation of the second classifier is followed by a code to generate class-activation maps and quantify the contribution of fish parts to it.
-Similarly, in the case of attention-based multiple instance learning, we calculate normalized attention given to each of the fish parts.
+To identify the features of the fish used to make classification decision, the second classifier notebook contains the code to generate class-activation maps (CAM) that point to discriminatory features of the fish. Similarly, in the case of third classifier notebook, we evaluate the attention given to different fish parts. To quantify the importance of fish parts for classification of different embryo classes in case of the classifiers 2. and 3., we manually generated masks which define boundaries of major fish parts (head, trunk, tail, yolk and yolk extension).
 
-The sets used for training and evaluation of the classifiers were kept the same for all classifiers. Since the number of images in the training set was different from class to class, we use class-weights normalization during training. Validation sets are balanced and consist of 20 images from each class.
+The sets used for training and evaluation of the classifiers were kept the same for all classifiers. Since the number of images in the training set was different from class to class, we use class-weights normalization during training. Validation set is balanced and consist of 20 images from each class.
 
 Lastly, the "code_for_plotting_figures" folder contains the code for plotting the three main figures of the manuscript.
 
@@ -36,6 +35,8 @@ The code is written in Python (version 3.6.5) using Jupyter notebooks as the pri
 
 To get started: 
 1. Download the dataset for training and evaluation from Zenodo (https://zenodo.org/record/6651752),
-2. Extract the files from 'data' folder and place 'training', 'validation' and 'fish_part_labels' folders in the same folder as the Jupyter notebooks,
-4. Install the packages required for running the notebooks that can be found in 'requirements.txt' (pip install -r requirements.txt),
-5. Run the notebook by executing the cells from top to bottom.
+2. Extract the files from 'data' folder and place 'training', 'validation', 'test' and 'fish_part_labels' folders in the same folder as the Jupyter notebooks,
+4. In the command line, create a virtual environment with python 3.6.5 with the command "conda create -n ZF_classification python=3.6.5",
+5. Activate the environment using "conda activate ZF_classification"
+5. Install the packages required for running the notebooks that can be found in 'requirements.txt' by executing "pip install -r requirements.txt" (make sure to have pip installed),
+6. Run the notebook by executing the cells from top to bottom.

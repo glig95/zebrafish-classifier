@@ -9,7 +9,7 @@ from types import SimpleNamespace
 
 
 # +
-def create_dataset(folder, target_size, batchsize=16, augment=False, shuffle=True, n_tiles=1):
+def create_dataset(folder, target_size, batchsize=16, augment=False, shuffle=True, grayscale=False, n_tiles=1):
     if augment:
         transform = albumentations.Compose([
         albumentations.HorizontalFlip(p=.5),
@@ -22,11 +22,17 @@ def create_dataset(folder, target_size, batchsize=16, augment=False, shuffle=Tru
     else:
         transform = albumentations.Compose([])
     
+    
+    transform_togray = albumentations.Compose([transform, albumentations.ToGray(p=1)])
+    
     if not all(s%n_tiles==0 for s in target_size):
         raise ValueError(f'Unsupported value {n_tiles=} - all dimensions of target_size {target_size} must be divisble by n_tiles!') 
         
-    def aug_fn(x):
-        x = np.stack([transform(image=_x)['image'] for _x in x])
+    def aug_fn(x):   
+        if grayscale: 
+            x = np.stack([transform_togray(image=_x)['image'] for _x in x])
+        else:
+            x = np.stack([transform(image=_x)['image'] for _x in x])
         return x
 
     def normalize(x,y):

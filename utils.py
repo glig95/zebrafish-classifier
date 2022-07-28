@@ -9,7 +9,7 @@ from types import SimpleNamespace
 
 
 # +
-def create_dataset(folder, target_size, batchsize=16, augment=False, shuffle=True, grayscale=False, n_tiles=1):
+def create_dataset(folder, target_size, batchsize=16, augment=False, shuffle=True, seed=42, grayscale=False, validation_split=None, subset=None, n_tiles=1):
     if augment:
         transform = albumentations.Compose([
         albumentations.HorizontalFlip(p=.5),
@@ -48,7 +48,9 @@ def create_dataset(folder, target_size, batchsize=16, augment=False, shuffle=Tru
         y = tf.stack([y]*n_tiles**2)
         return x,y
 
-    data = tf.keras.utils.image_dataset_from_directory(folder, batch_size=batchsize, shuffle=False, image_size=target_size)
+    data = tf.keras.utils.image_dataset_from_directory(folder, batch_size=batchsize, shuffle=True, 
+                                                       validation_split=validation_split, subset=subset, seed=seed,
+                                                       image_size=target_size)
     
     filenames = data.file_paths
     
@@ -73,7 +75,7 @@ def create_dataset(folder, target_size, batchsize=16, augment=False, shuffle=Tru
 
     data = data.map(process_aug, num_parallel_calls=tf.data.AUTOTUNE).prefetch(tf.data.AUTOTUNE)
 
-    return SimpleNamespace(data=data, transform=transform, images=images, labels=labels, counts=counts, filenames=filenames, class_name_to_id=class_name_to_id, class_id_to_name=class_id_to_name)
+    return SimpleNamespace(data=data, transform=transform, counts=counts, filenames=filenames, class_name_to_id=class_name_to_id, class_id_to_name=class_id_to_name)
 
 def show_augmented(folder='data/validation/', w=4, h=3):
     data = create_dataset(folder, augment=True, batchsize=1, target_size=(450,900), n_tiles=1)    
@@ -91,3 +93,6 @@ def show_augmented(folder='data/validation/', w=4, h=3):
      
     
 # show_augmented()
+# -
+
+
